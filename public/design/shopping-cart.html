@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="style.css">
+    <title>Book Store</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but book-store doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+        <div class="container">
+            <!-- <ShopHeader> -->
+            <header class="shop-header row">
+                <a href="/" class="logo-link">
+                    <div class="logo" href="#">Book store</div>
+                </a>
+                <a href="/cart" class="cart-link">
+                    <div class="shopping-cart">
+                      <i class="cart-icon fa fa-shopping-cart"></i>
+                      5 items 10
+                    </div>
+                </a>
+                </header>
+            <!-- </ShopHeader> -->
+            <!-- <ShoppingCartTable> -->
+                <div class="shopping-cart-table">
+                    <h2>Your Order</h2>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Item</th>
+                          <th>Count</th>
+                          <th>Price</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Site Reliability Engineering</td>
+                          <td>2</td>
+                          <td>$40</td>
+                          <td>
+                            <button class="btn btn-outline-danger btn-sm float-right">
+                              <i class="fa fa-trash-o"></i>
+                            </button>
+                            <button class="btn btn-outline-success btn-sm float-right">
+                              <i class="fa fa-plus-circle"></i>
+                            </button>
+                            <button class="btn btn-outline-warning btn-sm float-right">
+                              <i class="fa fa-minus-circle"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="total">
+                      Total: $201
+                    </div>
+                  </div>
+            <!-- </ShoppingCartTable> -->
+          </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Book Store</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but book-store doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+        <div class="container">
+            <!-- <ShopHeader> -->
+            <header class="shop-header row">
+                <a href="/" class="logo-link">
+                    <div class="logo" href="#">Book store</div>
+                </a>
+                <a href="/cart" class="cart-link">
+                    <div class="shopping-cart">
+                      <i class="cart-icon fa fa-shopping-cart"></i>
+                      5 items 10
+                    </div>
+                </a>
+                </header>
+            <!-- </ShopHeader> -->
+            <!-- <BookList>-->
+            <div>
+                <ul class="book-list">
+                    <li v-for="book in books">
+                        <div class="book-list-item">
+                            <div class="book-cover">
+                              <img src="https://picsum.photos/id/1069/433/433" alt="cover image" />
+                            </div>
+                            <div class="book-details">
+                              <span class="book-title">Grokking Deep Learning</span>
+                              <div class="book-author">Andrew W. Trask</div>
+                              <div class="book-price">$122</div>
+                              <button class="btn btn-info add-to-cart">Add to cart</button>
+                            </div>
+                          </div>
+                    </li>
+                    <li v-for="book in books">
+                      <div class="book-list-item">
+                          <div class="book-cover">
+                            <img src="https://picsum.photos/id/1067/433/433" alt="cover image" />
+                          </div>
+                          <div class="book-details">
+                            <span class="book-title">Machine Learning with TensorFlow</span>
+                            <div class="book-author">Nishant Shukla</div>
+                            <div class="book-price">$233</div>
+                            <button class="btn btn-info add-to-cart">Add to cart</button>
+                          </div>
+                        </div>
+                  </li>
+              </div>
+              <!-- </BookList> -->
+          </div>
+    </div>
+  </body>
+</html>
